@@ -93,9 +93,6 @@
 .ContenidoPagina {
 	position: absolute;
 	width: 80%;
-
-	
-
 	padding-top: 3%;
 	margin-top: 11%;
 	background-color: #FAFAFA;
@@ -106,6 +103,7 @@
 	padding-right: 2%;
 	height: auto;
 	margin-left: 8%;
+	padding-left: 2%;
 }
 #Game {
 	float: left;
@@ -121,7 +119,7 @@
 #construction {
 	background-image: url(../Img/Web/construc.png);
 	position: fixed;
-	top: 28%;
+	top: 50%;
 	right: 50%;
 	bottom: 50%;
 	width: 32%;
