@@ -1,0 +1,139 @@
+#Cabezera {
+	height: 250px;
+	width: 100%;
+	position: static;
+	left: 2px;
+}
+
+
+
+#Redes {
+	float: right;
+	position: relative;
+	margin-right: 50px;
+}
+#Login {
+	background-color: #FAFAFA;
+	height: 121px;
+	width: 245px;
+	float: left;
+	position: relative;
+	color: #F1F1F1;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	-webkit-box-shadow: 0px 0px 13px 9px #545454;
+	box-shadow: 0px 0px 13px 9px #545454;
+}
+#Contacto {
+	background-color: #353535;
+	height: 40px;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	margin-right: 20px;
+	margin-left: auto;
+	left: 3px;
+	color: #EFEFEF;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	text-align: center;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 40px;
+}
+.SelectBar {
+	width: 1490px;
+	height: 60px;
+	position: static;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.SelectBar a{
+	position: relative;
+	float: left;
+	margin-right: 5px;
+	clear: none;
+	width: 200px;
+	height: 60px;
+	margin-left: 5px;
+	
+}
+.SelectBar a:hover{
+	border: thick solid #FFFFFF;
+}
+.SelectBar a .Button{
+	width: 200px;
+	height: 60px;
+	background-image: url(../Img/Web/button.png);
+	position: relative;
+	color: #2D2D2D;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 129%;
+	line-height: 311%;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	clear: none;
+	font-style: normal;
+	font-variant: normal;
+	text-indent: 0;
+	text-shadow: -1px 0px 1px #3D3D3D;
+	
+}
+#CuadroTexto {
+	background-color: #E9E9E9;
+	border-width: medium;
+	border-style: inset;
+	position: absolute;
+	width: 50%;
+}
+.ContenidoPagina {
+	position: absolute;
+	width: 80%;
+
+	
+
+	padding-top: 3%;
+	margin-top: 11%;
+	background-color: #FAFAFA;
+	-webkit-box-shadow: 0px 0px 28px 8px #555555;
+	box-shadow: 0px 0px 28px 8px #555555;
+	margin-right: 10%;
+	padding-bottom: 3%;
+	padding-right: 2%;
+	height: auto;
+	margin-left: 8%;
+}
+#Game {
+	float: left;
+	height: 41%;
+	width: 16%;
+	position: fixed;
+	background-image: url(../Img/Web/Inicio.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: 0px;
+	left: 0px;
+}
+#construction {
+	background-image: url(../Img/Web/construc.png);
+	position: fixed;
+	top: 28%;
+	right: 50%;
+	bottom: 50%;
+	width: 32%;
+	height: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	left: 34%;
+}
+#Juego {
+	height: 866px;
+	width: 575px;
+	border: medium solid #2D2D2D;
+	left: 50%;
+	right: 50%;
+}

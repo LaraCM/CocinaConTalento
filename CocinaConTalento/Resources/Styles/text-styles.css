@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+.Textblock {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	height: auto;
+	width: auto;
+	color: #575757;
+	position: relative;
+}
+.Textblock t1{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	color: #020202;
+	font-weight: bold;
+}
+.Textblock t2{
+	font-family: bubbler-one;
+	font-size: 73px;
+	color: #2D2D2D;
+	font-weight: 400;
+	text-align: center;
+	font-style: normal;
+	-webkit-box-shadow: 0px 0px 13px;
+	box-shadow: 0px 0px 13px;
+	text-shadow: 0px 0px 5px;
+}
+#separadorizq {
+	float: left;
+	height: auto;
+	width: 80%;
+	position: relative;
+}
+#separadorizq2 {
+	float: left;
+	height: auto;
+	width: 53%;
+	position: relative;
+}

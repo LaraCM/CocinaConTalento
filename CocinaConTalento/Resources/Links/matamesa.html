@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Inicio</title>
+<link href="../Styles/structure-styles.css" rel="stylesheet" type="text/css" />
+<link href="../Styles/text-styles.css" rel="stylesheet" type="text/css" />
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/bubbler-one:n4:default;emblema-one:n4:default;fredericka-the-great:n4:default;hobo-std:n4:default;leckerli-one:n4:default;mrs-sheppards:n4:default.js" type="text/javascript"></script>
+<script language="javascript">
+
+vector=new Array("../Img/Other/Mata_Mesa/1.JPG","../Img/Other/Mata_Mesa/2.JPG","../Img/Other/Mata_Mesa/3.JPG","../Img/Other/Mata_Mesa/4.JPG","../Img/Other/Mata_Mesa/5.JPG","../Img/Other/Mata_Mesa/6.JPG");
+
+var posi=0; 
+function rotar(){
+	// acccedemos al marco de la imagen, para cambiar la imagen, por una de las guardadas en el array
+	document.marco.src=vector[posi];
+	posi++;
+	if(posi==vector.length) posi=0;
+}
+
+//Crea un intervalo, en el que cada 1000 ms vuelve a llamar la funcion de rotar
+setInterval("rotar()",8000);
+
+</script>
+
+
+</head>
+
+<body background="../Img/Web/pattern.png" onload="rotar()">
+<!-- Cabezera de Inicio -->
+
+
+<div id="Cabezera">
+
+  
+	  <!--<div id="Login">Login</div>-->
+   		 <div id="Redes">
+   		 	
+	 	   <a href="https://www.facebook.com/profile.php?id=100014276148465"> <img src="../Img/Web/facebook.png" width="50" height="50" /></a>
+   		 </div>
+  <center><img src="../Img/Web/titulo.png" style="position: relative" /></center>
+    	
+   	  <center><div class="SelectBar">
+    	  <a href="recetas.html"><div class="Button">Recetas</div></a>
+    	  <a href="detemporada.html"><div class="Button">De Temporada</div></a>
+    	  <a href="verduras.html"><div class="Button">Verduras</div></a>
+    	  <a href="../../cocinacontalento.html"><div class="Button">Inicio</div></a>
+    	  <a href="fotocazuela.html"><div class="Button">Foto Cazuela</div></a>
+    	  <a href="trucos.html"><div class="Button">Trucos</div></a>
+		  <a href="matamesa.html"><div class="Button">De Mata a Mesa</div></a>
+   	    </div></center>
+    	
+    </div>
+    
+    <!-- contenido aqui!!-->
+	<div class="ContenidoPagina">
+  	<div class="Textblock">
+	  <t2><p>DE LA MATA A LA MESA </p></t2>
+	  <t1><p>HABAS ESOS GRANOS VERDES </p></t1>
+	  <p>Aún es tiempo de habas, esas deliciosas legumbres con numerosos beneficios nutricionales y que  podemos degustar frescas de Enero a Junio. </p>
+	  <p>Es un alimento exquisito ,tanto crudo como cocinado. En crudo , recién desgranadas de su vaina nos aportan todas sus vitaminas, proteinas vegetales,hidratos de carbono y fibra. Tiernas y no demasiado grandes tienen una textura agradable y sabor potente e inigualable. El aroma que desprenden te transporta a una pradera verde y fresca. Cocinadas cambia su sabor, pero es igualmente exquisito. </p>
+	  <p>Se pueden realizar numerosas y variadas recetas, formando parte primordial de una buena menestra. Solas, aliñadas con un buen aceite de oliva. Rehogadas, con unos taquitos de jamón. O acompañando a un arroz para lograr un plato redondo. Esta habas que veis en las imágenes son caseras. De la pequeña huerta familiar que cultivamos sin productos químicos. </p>
+	  <p>Espero que os gusten y disfrutéis de ellas, como hacemos nosostros.</p>
+     </div>
+     
+<center><img src="../Img/Other/Mata_Mesa/1.JPG" name="marco" width="500px" /></center>
+    	
+    	
+    </div>
+
+    
+    
+
+    <div id="Contacto">Email de Contacto: adelinamullor@hotmail.com</div>
+    
+    
+    
+    
+</body>
+</html>
