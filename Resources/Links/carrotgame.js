@@ -111,17 +111,17 @@ function init()
 	update();
 }
 
-function getMousePos(canvas, evt) {
+/*function getMousePos(canvas, evt) {
         var rect = canvas.getBoundingClientRect();
         return evt.clientX - rect.left;
-      }
+      }*/
 
 function update()
 {
 	"use strict";
-	canvas.addEventListener('mousemove', function(evt) {
+	/*canvas.addEventListener('mousemove', function(evt) {
 	mousePosX = getMousePos(canvas, evt);
-      }, false);
+      }, false);*/
 	
 	
 		Move();
@@ -190,11 +190,12 @@ function Move(){
 	
 	if(Start && !Dead){
 	//Player
-	if(Carrot.x>mousePosX && Carrot.x>0) {Carrot.x-=Carrot.v;}
-	if(Carrot.x<mousePosX && Carrot.x<canvas.width) {Carrot.x+=Carrot.v;}
+	//if(Carrot.x>mousePosX && Carrot.x>0) {Carrot.x-=Carrot.v;}
+	//if(Carrot.x<mousePosX && Carrot.x<canvas.width) {Carrot.x+=Carrot.v;}
 	
-	/*if(Carrot.facingL && Carrot.x>0) {Carrot.x-=Carrot.v;}
-	else if(!Carrot.facingL && Carrot.x<canvas.width) {Carrot.x+=Carrot.v;}*/
+	if(Carrot.facingL && Carrot.x>20) {Carrot.x-=Carrot.v;}
+	else if(!Carrot.facingL && Carrot.x<canvas.width-20) {Carrot.x+=Carrot.v;}
+		
 		if(!Wait){
 		if(!Carrot.jumping){
 			if(Gravity) {Carrot.y+=Carrot.v;}
@@ -207,7 +208,7 @@ function Move(){
 				if(jumpcounter<2) {Carrot.image.src=Carrotsprite[1]; jump.play();}
 				if(jumpcounter>2) {Carrot.image.src=Carrotsprite[2];}
 				if(jumpcounter>4) {Carrot.image.src=Carrotsprite[1];}
-				if(jumpcounter>6) {Carrot.jumpspr=false; jumpcounter=0;Carrot.image.src=Carrotsprite[0]; Carrot.jumpingcounter=0;}
+				if(jumpcounter>5) {Carrot.jumpspr=false; jumpcounter=0;Carrot.image.src=Carrotsprite[0]; Carrot.jumpingcounter=0;}
 			}
 			else {
 				if(Carrot.jumpingcounter<=50){if(Carrot.y>=0){Carrot.y-=Carrot.v;}else{Carrot.jumpingcounter=60} Carrot.jumpingcounter++;}
@@ -255,6 +256,7 @@ function Restart(){
 	Shelfs.splice(0,Shelfs.length);
 	Carrot.y =0;
 	Carrot.image.src=Carrotsprite[0];
+	Carrot.v=speed+2;
 }
 
 document.addEventListener('keydown',function(evt)
