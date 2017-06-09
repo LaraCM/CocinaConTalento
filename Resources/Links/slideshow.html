@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>slideshow</title>
+
+
+<style type="text/css">
+
+	img{
+	width: 100%;
+	position: relative;
+	border: thick solid #FFFFFF;
+	-webkit-box-shadow: 0px 0px 16px 2px;
+	box-shadow: 0px 0px 16px 2px;
+	}
+	.w3-content{
+	position: relative;
+	transform: translate(-50%,0%);
+	-ms-transform: translate(-50%,0%);
+	width: 60%;
+	height: auto;
+	margin-left: 50%;
+	margin-top: 4px;
+	padding-top: 4px;
+	}
+	.w3-center{
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%,0%);
+	-ms-transform: translate(-50%,0%);
+	color: #FFFFFF;
+	font-size: 56px;
+	}
+	.w3-left{
+	float: left!important;
+	position: relative;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	padding-right: 2px;
+	}
+	.w3-right{
+	float: right!important;
+	position: relative;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+		padding-right: 2px;
+	}
+	
+	.mynames{
+	background-color: #171717;
+	position: fixed;
+	margin-top: 15px;
+	padding-top: 7px;
+	padding-bottom: 9px;
+	padding-left: 6px;
+	padding-right: 0px;
+	color: #FCFCFC;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	text-align: center;
+	border: medium solid #FFFFFF;
+	background-size: 0 ox auto;
+	-webkit-box-shadow: 0px 0px 14px 3px #050505;
+	box-shadow: 0px 0px 14px 3px #050505;
+	width: 100%;
+	}
+	
+</style>
+<div class="w3-content w3-display-container">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Ajos confitados.JPG">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Alcachofas rebozadas.jpg">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Caldo de pescado.jpg">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Ciruelas en maceración.jpg">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Crujiente de verduritas.jpg">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Espaguetti de huerta.jpg">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Higaditos de pollo.jpg">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Huevo poché.jpg">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Berenjenas_1.jpg">
+<img class="mySlides" src="../Img/Other/FotoCazuela/berenjenas_2.jpg">
+<!--<img class="mySlides" src="../Img/Other/FotoCazuela/menestra de verduras frescas.jpg">-->
+<img class="mySlides" src="../Img/Other/FotoCazuela/IMG_4187.jpg">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Langostinos en salsa.jpg">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Lechecillas a la zamorana.jpg">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Lentejas1.jpg">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Lubina.jpg">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Morcilla.jpg">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Patata morada.jpg">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Revuelto dde setas.jpg">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Sepia.jpg">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Setas con castañas.jpg">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Setas.jpg">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Solomillo con ciruelas.jpg">
+<img class="mySlides" src="../Img/Other/FotoCazuela/Uvas confitadas.jpg">
+
+<div class="mynames">Ajos confitados</div>
+<div class="mynames">Alcachofas rebozadas</div>
+<div class="mynames">Caldo de pescado</div>
+<div class="mynames">Ciruelas en maceración</div>
+<div class="mynames">Crujiente de verduritas</div>
+<div class="mynames">Espaguetti de huerta</div>
+<div class="mynames">Higaditos de pollo</div>
+<div class="mynames">Huevo poché</div>
+<div class="mynames">Berenjenas</div>
+<div class="mynames">Berenjenas 2</div>
+<!--<div class="mynames">Menestra de verduras frescas</div>-->
+<div class="mynames">Guiso con gambas</div>
+<div class="mynames">Langostinos en salsa</div>
+<div class="mynames">Lechecillas a la zamorana</div>
+<div class="mynames">Lentejas</div>
+<div class="mynames">Lubina</div>
+<div class="mynames">Morcilla</div>
+<div class="mynames">Patata morada</div>
+<div class="mynames">Revuelto de setas</div>
+<div class="mynames">Sepia</div>
+<div class="mynames">Setas con castañas</div>
+<div class="mynames">Setas</div>
+<div class="mynames">Solomillo con ciruelas</div>
+<div class="mynames">Uvas confitadas</div>
+
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+	var y = document.getElementsByClassName("mynames");
+	
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+	
+	if (n > y.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = y.length}
+  for (i = 0; i < y.length; i++) {
+     y[i].style.display = "none";  
+  }
+  y[slideIndex-1].style.display = "block";  
+}
+	
+</script>
+</head>
+
+<!-- Images-->
+
+
+<body style="overflow-x: hidden;overflow-y: hidden;" >
+	<div class="w3-content">
+		<div class="w3-center" style="width:100%">
+			<div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+			<div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+		</div>
+		
+	  
+    </div>
+
+</body>
+</html>

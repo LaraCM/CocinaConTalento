@@ -22,6 +22,7 @@ function rotar(){
 //Crea un intervalo, en el que cada 1000 ms vuelve a llamar la funcion de rotar
 setInterval("rotar()",8000);
 
+
 </script>
 
 
@@ -74,10 +75,44 @@ setInterval("rotar()",8000);
   	    
    	    <img src="Resources/Img/Web/perfil.png" height="200px" style="position: relative; float:left; padding-right: 20px; " />
    	    
+   	    <t1>
+   	      <p><br />
+   	      </p>
+   	      <p>&nbsp;</p>
+   	      <p>&nbsp;</p>
+   	      <p>&nbsp;</p>
+   	      <p>&nbsp;</p>
+   	      <p>&nbsp;</p>
+   	      <p>&nbsp;</p>
+   	      <p>¿Tienes alguna pregunta? Envíame un email</p>
+   	    </t1>
   </div>
     	
-    	
-    </div>
+		<form method="post" name="email_form" enctype="text/plain"
+		action="mailto:adelinamullor@hotmail.com">
+
+			<p>
+			  <input type="text" name="subject" placeholder="Nombre" /></p>
+			  <p>
+			  <input type="text" name="email" placeholder="Email">
+		  </p>
+			<p>
+			  <textarea name="message" placeholder="Message"></textarea>
+			  <input type="hidden" name="access_token" value="abc123" />
+
+			   
+			  
+			  <input type="hidden" name="success_url" value="." />
+			  <input type="hidden" name="error_url" value=".?err=1" />
+		  </p>
+			<p>
+			  <input id="submit_form" type="submit" value="Send" />
+		  </p>
+
+		</form>
+		
+		
+</div>
 
     
     
